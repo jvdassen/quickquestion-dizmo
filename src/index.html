@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Vuejs</title>
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div id="front">
+  <div id="app">
+    <!-- <p>{{ message }}</p> -->
+    <input v-model="message" v-on:keyup="writeToTree" data-type='dizmo-input'>
+    <h2 v-bind:text="message">{{message}}</h2>
+  </div>
+</div>
+<div id="back">
+    <div class="footer">
+        <button id="done" data-type="dizmo-button">Done</button>
+    </div>
+</div>
+
+<script src="lib/i18n-1.0.6.min.js"></script>
+<script src="index.js"></script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+</body>
+</html>
