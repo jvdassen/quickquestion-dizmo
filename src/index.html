@@ -10,8 +10,22 @@
 <div id="front">
   <div id="app">
     <!-- <p>{{ message }}</p> -->
-    <input v-model="message" v-on:keyup="writeToTree" data-type='dizmo-input'>
-    <h2 v-bind:text="message">{{message}}</h2>
+    <!-- <h2 v-bind:text="message">{{message}}</h2> -->
+    <div id="questions-container">
+      <ul>
+        <li class="question-item" v-for="question in questions">
+          <kbd>{{ question }}</kbd>
+        </li>
+      </ul>
+    </div>
+    <div id="userinput">
+
+      <input v-model="newquestion" data-type='dizmo-input' v-on:keyup.enter="writeToTree" placeholder="Add a new quick-question for the presenter">
+      <button v-on:click="writeToTree" data-type="dizmo-button">
+        Add
+      </button>
+    </div>
+
   </div>
 </div>
 <div id="back">

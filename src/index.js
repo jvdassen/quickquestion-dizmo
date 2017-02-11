@@ -16,22 +16,20 @@ document.addEventListener('dizmoready', function () {
   var app = new Vue({
     el: '#app',
     data: {
-      message: dizmo.privateStorage.getProperty('message')
+      newquestion: '',
+      questions: dizmo.privateStorage.getProperty('questions') || [],
+
     },
     methods: {
-      logmessage: function(){
-        console.log(this.message);
-      },
       writeToTree: function(){
-        dizmo.privateStorage.setProperty('message', this.message);
+        this.questions.push(this.newquestion);
+        dizmo.privateStorage.setProperty('questions', this.questions);
+        this.newquestion = '';
       }
-
     }
   });
-  dizmo.privateStorage.subscribeToProperty('message',function(path, newval, oldval) {
-    console.log(newval);
-    console.log('app.message' + app.message);
-    app.message = newval;
+  dizmo.privateStorage.subscribeToProperty('questions',function(path, newval, oldval) {
+    app.questions = newval;
   });
 
 
