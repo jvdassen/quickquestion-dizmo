@@ -1,6 +1,6 @@
-# Vuejs dizmo
+# Quick Questions dizmo
 
-Create the `Vuejs` dizmo by running `npm run make` and drag and drop the generated file &ndash; which can be found at `build/Vuejs-x.y.z.dzm` &ndash; onto dizmoViewer. The suffix of the file will be the current version number.
+Create the `Quick Questions` dizmo by running `npm run make` and drag and drop the generated file &ndash; which can be found at `build/Vuejs-x.y.z.dzm` &ndash; onto dizmoViewer. The suffix of the file will be the current version number.
 
 ## Building
 
@@ -8,7 +8,7 @@ Building the dizmo requires a sequence of tasks to be run, which are:
 
 * `npm run clean`: Cleans the previous build (if any) by removing the `build/` folder completely.
 
-* `npm run make`: Packages the dizmo as `build/Vuejs-x.y.z.dzm` by running all required build tasks and compressing the resulting dizmo as a ZIP archive (but with a `.dzm` extension).
+* `npm run make`: Packages the dizmo as `build/quickquestions-dizmo-x.y.z.dzm` by running all required build tasks and compressing the resulting dizmo as a ZIP archive (but with a `.dzm` extension).
 
 * `npm run install`: Builds and installs the dizmo to the `dizmo/install-to` path (see the `package.json` file). If `install-to` is empty then the dizmo is only built, but not installed.
 
