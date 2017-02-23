@@ -1,5 +1,5 @@
 {
-    "description": "Vuejs",
+    "description": "Quick Questions for interactive Presentations",
     "devDependencies": {
         "browserify": "^13.1.0",
         "gulp": "^3.9.1",
@@ -18,7 +18,7 @@
     "dizmo": {
         "install-to": "/Users/Jan/Library/Application Support/dizmo/jvda/InstalledDizmos",
         "settings": {
-            "bundle-identifier": "org.example.vuejs",
+            "bundle-identifier": "com.vonderassen.quickquestions-dizmo",
             "height": 240,
             "width": 480
         }
@@ -28,7 +28,7 @@
         "vuejs"
     ],
     "license": "ISC",
-    "name": "Vuejs",
+    "name": "Quick Questions",
     "person": {
         "name": "Jan",
         "email": "jan.vda@gmx.ch"

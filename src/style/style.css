@@ -12,6 +12,7 @@ html, body {
 #front {
     height: 100%;
     width: 100%;
+    background-color: rgb(237,237,237)
 }
 #app {
   display: -webkit-flex;
@@ -25,6 +26,16 @@ html, body {
 #questions-container {
   height: 80%;
   overflow: scroll;
+}
+#questions-container span {
+  font-size: 100px;
+  text-align: center;
+  color: rgba(33,33,33,0.3);
+  position: relative;
+  top: 40px;
+}
+#questions-container div {
+  text-align: center;
 }
 .question-item {
   margin-bottom: 7px;
@@ -41,6 +52,7 @@ kbd {
   -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
   box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
 }
+
 ul {
   list-style-type: none;
   padding-left: 0px;

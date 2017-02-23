@@ -12,6 +12,9 @@
     <!-- <p>{{ message }}</p> -->
     <!-- <h2 v-bind:text="message">{{message}}</h2> -->
     <div id="questions-container">
+      <div v-if="questions.length==0">
+        <span>?</span>
+      </div>
       <ul>
         <li class="question-item" v-for="question in questions">
           <kbd>{{ question }}</kbd>
